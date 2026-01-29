@@ -53,19 +53,23 @@ body {
 /* Create modal styles according to the requirements */
 .modal {
   position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-  border: solid red;
-  width: 300px;
+  box-shadow: 1px 2px 6px 1px rgba(0,0,0,0.3);
+  max-width: 300px;
+  border: solid #3d5b79;
   height: 200px;
   background-color: lightblue;
   z-index: 1000;
   border-radius: 10px;
+  box-sizing: border-box;
 }
 
 .modal-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2
+  z-index: 2; 
+  text-align: center;
+  flex-direction: column;
 }
 
 .modal-backdrop {
